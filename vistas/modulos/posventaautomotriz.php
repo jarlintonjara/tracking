@@ -360,8 +360,6 @@
                         <!-- /.card-body -->
                         </div>
                         <!-- /.card -->
-                            
-                    
                    </div>
                    <div class="col-xs-12 col-sm-8 col-md-6">
                         <div class="small-box" style="background-color:#e9ecef">

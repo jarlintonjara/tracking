@@ -9,19 +9,20 @@ require_once "conexion.php";
    
    static public function mdlbuscarbydocumentotracking( $datos )
    {
-      $stmt = Conexion::conectar()->prepare("SELECT TOP 1 * FROM postventa_automotriz where numero_documento = ? ");
+      $stmt = Conexion::conectar()->prepare("SELECT  * FROM postventa_automotriz where numero_documento = ? LIMIT 1");
       $stmt->execute([$datos->NroDocumento]);
       return $stmt->fetch();
    }
    static public function mdlbuscarbyplacatracking( $datos )
    {
-      $stmt = Conexion::conectar()->prepare("SELECT TOP 1 * FROM postventa_automotriz where placa = ? ");
+      $stmt = Conexion::conectar()->prepare("SELECT * FROM postventa_automotriz where placa = ? LIMIT 1");
       $stmt->execute([$datos->placa]);
       return $stmt->fetch();
+
    }
    static public function mdlbuscarbyvintracking( $datos )
    {
-      $stmt = Conexion::conectar()->prepare("SELECT TOP 1 * FROM postventa_automotriz where vin = ? ");
+      $stmt = Conexion::conectar()->prepare("SELECT * FROM postventa_automotriz where vin = ? LIMIT 1");
       $stmt->execute([$datos->vintracking]);
       return $stmt->fetch();
    }

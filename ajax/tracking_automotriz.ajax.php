@@ -3,11 +3,12 @@
 require_once "../controladores/tracking_automotriz.controlador.php";
 require_once "../modelos/tracking_automotriz.modelo.php";
 
-
+// header('Content-Type: application/json');
 class AjaxTrackingAutomotriz{
     /*=============================================
 					FORM AUTOMOTRIZ
 	=============================================*/
+    
     public function ajaxGuardarFormularioAutomotriz()
     {
         $respuesta = ControladorTrackingAutomotriz::ctrGuardarFormAutomotriz();
@@ -51,6 +52,8 @@ class AjaxTrackingAutomotriz{
     public function buscarbyplacatracking()
     {
         $respuesta = ControladorTrackingAutomotriz::ctrbuscarbyplacatracking( $this );
+        // var_dump($respuesta);
+        // var_dump(json_encode($respuesta,JSON_UNESCAPED_UNICODE));
         echo json_encode($respuesta);exit;
     }
     public function buscarbyvintracking()
