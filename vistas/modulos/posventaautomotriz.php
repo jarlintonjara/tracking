@@ -63,11 +63,12 @@
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <div id="divperfilamiento" class="icon fa-3x" style="text-align: right; margin-bottom: 25%; color: #212529; ">
-                                    <i class="fa fa-user"></i>
-                                    <p id="textoperfilamiento" style="font-size: 14px;">Perfil</p>
+                                <div id="divperfilamiento" class="icon fa-3x" style="text-align: right; margin-bottom: 31%; color: #212529; ">
+                                    <i class="fa fa-user" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top" id="textoperfilamiento"></i>
+                                    
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -154,8 +155,8 @@
 
             <div class="row">
 
-            <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="card card-primary card-outline direct-chat direct-chat-primary">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card card-primary card-outline direct-chat direct-chat-primary">
                         <div class="card-header">
                             <h3 class="card-title">Motivo de visita a taller</h3>
                         </div>
@@ -408,14 +409,16 @@
 
 
                     </div>
-
-                    <a class="btn btn-app bg-danger" onclick="window.print()" style="float: right;" id="imprimir">
-                        <i class="fas fa-print"></i> Imprimir
-                     </a>
-            
                    </div>
                 </div>
 
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <a class="btn btn-app bg-danger" onclick="window.print()" style="float: right;" id="imprimir">
+                        <i class="fas fa-print"></i> Imprimir
+                     </a>
+                </div>
             </div>
 
         <!-- /.card-body -->
@@ -427,7 +430,11 @@
   </div>
   <!-- /.content-wrapper -->
   </form>
-
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
   <script src="vistas/js/posventaautomotriz.js"></script>
   <script src="vistas/dist/js/blockui.js?<?= date("smH") ?>">"></script>
 

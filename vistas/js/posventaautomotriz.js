@@ -218,11 +218,12 @@ $(document).ready(function(){
         $('#reclamo2_fecha').html("<b>Fecha : </b>" + cliente.reclamo2_fecha);
         $('#subcategoria_reclamo2').html("<b>Subcategoría : </b>" + cliente.subcategoria_reclamo2);
         $('#propietario_reclamo2').html("<b>Propietario : </b>" + cliente.propietario_reclamo2);
-        $('#textoperfilamiento').html(cliente.perfilamiento);
+        // $('#textoperfilamiento').html(cliente.perfilamiento);
         $("#progressventa").css("width", Math.round(cliente.nps_venta*10)+"%");
         $("#progresspostventa").css("width", Math.round(cliente.nps_postventa*10)+"%");
         $('#estadoreclamo').html("<b>Estado : </b>"+ cliente.estado_reclamo);
         $('#estadoreclamo2').html("<b>Estado : </b>"+ cliente.estado_reclamo2);
+        $('#textoperfilamiento').tooltip('hide').attr('data-original-title', cliente.perfilamiento);
         
 
         switch (true) {
