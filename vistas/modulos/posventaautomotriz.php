@@ -219,6 +219,7 @@
                                 <!-- /.direct-chat-img -->
                                 <div class="direct-chat-text">
                                     <p id="servicio"></p>
+                                    <p id="n-ot1"># OT</p>
                                 </div>
                                 <!-- /.direct-chat-text -->
                             </div>
@@ -232,7 +233,8 @@
                                 </div>
                                 <!-- /.direct-chat-infos -->
                                 <div class="direct-chat-text">
-                                <p id="servicio2"></p>
+                                    <p id="servicio2"></p>
+                                    <p id="n-ot2"># OT</p>
                                 </div>
                                 <!-- /.direct-chat-text -->
                             </div>
@@ -247,6 +249,7 @@
                                 <!-- /.direct-chat-img -->
                                 <div class="direct-chat-text">
                                     <p id="servicio3"></p>
+                                    <p id="n-ot3"># OT</p>
                                 </div>
                                 <!-- /.direct-chat-text -->
                             </div>
